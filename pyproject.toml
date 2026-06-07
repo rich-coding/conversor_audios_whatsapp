@@ -1,0 +1,16 @@
+[project]
+name = "conversor-audios-whatsapp"
+version = "0.1.0"
+description = "Conversor de audio OPUS de WhatsApp a MP3 ligero para NotebookLM"
+readme = "README.md"
+# Forzamos un rango compatible (Python 3.11 o 3.12, evitando 3.13 y 3.14)
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "pydub>=0.25.1",
+]
+
+# Estructura corregida para evitar el warning de desaprobación de UV
+[dependency-groups]
+dev = [
+    "marimo>=0.1.0",
+]
